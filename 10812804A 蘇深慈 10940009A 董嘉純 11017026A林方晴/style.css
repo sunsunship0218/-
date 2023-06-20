@@ -1,0 +1,261 @@
+@import url(http://127.0.0.1:5500/index.html);
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #0c012df4;
+}
+/* 滑條*/
+::-webkit-scrollbar{
+    width: auto;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(246, 78, 78, 0.5);
+    border-radius: 10px;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 7px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 1000;
+}
+/*當滾動的垂直位移大於 0 時，將在 header 元素上切換 sticky 類別。*/
+header.sticky{
+    background-color: #1e2027a6;
+    box-shadow: 0px 10px 20px rgba(249, 112, 112, 0.329);
+}
+header .logo{
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+header ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background-color: #95b4bd49;
+    color:#DEB887;
+    box-shadow: 0 0 10px #FFF8DC;
+}
+header .action .searchBx{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafcfcc7;
+    border-radius: 5px;
+}
+header .action .searchBx i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: #fcfafa
+}
+header .action .searchBx input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color:#696969;
+}
+
+/* Home Banner */
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+.banner .bg .content h2{
+    font-size: 4em;
+    color: #f687878e ;
+    letter-spacing: 1px;
+}
+.banner .bg .content h6{
+    color: #97f3e88c ;
+    letter-spacing: 1px;
+}
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #f3f494e4;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #ffff64 ;
+    letter-spacing: 1px;
+}
+/* 滑鼠滑過 */
+.banner .bg .content a:hover{ 
+    background-color: rgba(255, 58, 104, 0.568);
+    border: none;
+    color: #c9e7e8e6;
+    box-shadow: #f1cefa;
+}
+/* banner背景 */
+.banner .bg {
+    background-color: #0c012df4;
+    
+}
+/*背景圖片*/
+.background-image {
+    transform: scale(0.9) translateX(300px); /* 將圖片放大兩倍並向右移動100像素 */
+  }
+/*about*/
+.bg2-img{
+    transform: scale(0.7)
+}
+.about{
+    position: relative;
+    width:100%;
+    min-height: 75vh;
+    padding: 0px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .contentBx{
+    width: 50%;
+    margin: 20px;
+}
+.about .contentBx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #f6ff8f;
+}
+.about .contentBx p{
+    font-size: 14px;
+    text-align: justify;/*左右對其*/
+    color: #dddfc9a8;
+}
+.about .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #ff1b1be4;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #f9f953 ;
+    letter-spacing: 1px;
+}
+.about .contentBx a:hover{ 
+    background-color: rgba(255, 58, 104, 0.568);
+    border: none;
+    color: #c9e7e8e6;
+    box-shadow: #f1cefa;
+}
+.game{
+    padding: 0px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:40px 0;
+}
+.game h1{
+    color: rgba(255, 113, 113, 0.845);
+     margin: 40px 0;
+}
+.game ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.game ul li {
+   
+    background-color: #de7979;
+    color:#080101;
+    box-shadow: 0 0 10px #de7979;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #f1cefa;
+}
+.game ul li:hover{ 
+    background-color: rgba(255, 58, 104, 0.568);
+    border: none;
+    color: #c9e7e8e6;
+    box-shadow: #f1cefa;
+}
+.game ul li a{
+    text-decoration: none; 
+}
+.game ul li:first-child {
+    margin-right: 50px;
+  }
+  
+  .game ul li:last-child {
+    margin-left: 80px;
+  }
+  
+footer{
+    background-color: rgba(118, 209, 245, 0.301);
+    padding: 2px;
+    
+}
+.footer-content {
+    color: #fff; 
+    font-size: 14px; 
+    text-align: center; 
+}
+.footer-content a {
+    color: #dc3a3a; 
+    text-decoration: none; 
+    margin: 0 5px; 
+}
+.footer-content a:hover {
+    text-decoration: underline; 
+    background-color: #f1f9ae33;
+    border: none;
+    color: #c9e7e8e6;
+    box-shadow: #f1cefa;
+}
+.footer-content p:first-child {
+    font-weight: bold; /* 设置版权信息文本加粗 */
+}
